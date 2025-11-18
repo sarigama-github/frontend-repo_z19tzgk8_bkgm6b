@@ -3,6 +3,11 @@ import Hero from './components/Hero'
 import Programs from './components/Programs'
 import Highlights from './components/Highlights'
 import CTA from './components/CTA'
+import ImpactMetrics from './components/ImpactMetrics'
+import ClinicsMap from './components/ClinicsMap'
+import DonorLogos from './components/DonorLogos'
+import Newsletter from './components/Newsletter'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,16 +16,14 @@ function App() {
 
       <Navbar />
       <Hero />
+      <DonorLogos />
       <Programs />
+      <ImpactMetrics />
       <Highlights />
+      <ClinicsMap />
+      <Newsletter />
       <CTA />
-
-      <footer className="border-t border-white/10 py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sky-200/70 text-sm">© {new Date().getFullYear()} Nepal Fertility Care Center. All rights reserved.</p>
-          <div className="text-sky-200/70 text-sm">Designed for a modern, inclusive web.</div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
